@@ -1,0 +1,17 @@
+# .workflow/config.yaml
+project:
+  name: ""
+  language: ""
+  framework: ""
+  architecture: none
+  lang_framework: ""
+
+git:
+  convention: conventional
+
+backend:
+  default: claude
+
+test:
+  strategy: none
+  type: unit

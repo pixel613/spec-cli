@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+firebase-debug.log
+sf-cli-spec-en.md

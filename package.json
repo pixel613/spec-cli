@@ -1,0 +1,52 @@
+{
+  "name": "@pixel613/spec",
+  "version": "1.0.0",
+  "description": "Lightweight spec-driven development CLI",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "spec-driven",
+    "claude-code",
+    "ai",
+    "cli",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixel613/spec-cli.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "pxs": "./dist/bin/pxs.js"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "dev": "tsx watch bin/pxs.ts",
+    "test": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "inquirer": "^12.6.0",
+    "js-yaml": "^4.1.0"
+  },
+  "files": [
+    "dist/",
+    "templates/"
+  ],
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
